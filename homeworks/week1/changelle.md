@@ -23,3 +23,9 @@ echo "檔案建立完成";
 
 5. 執行shell script 檔案
 ```./test.sh```
+這時候會新增一個js檔案
+也可以輸入
+```
+./test.sh abc
+```
+這時候會新增一個abc的檔案
