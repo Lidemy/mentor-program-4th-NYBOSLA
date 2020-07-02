@@ -1,13 +1,12 @@
+
 function printStars(n) {
-
-    var star = ''
-    for (i = 0; i < n; i++) {
-        star = star + '*'
-    }
-    console.log(star);
-
+  let star = '';
+  let i = 0;
+  const starString = '*';
+  for (i = 0; i < n; i + 1) {
+    star += starString;
+  }
+  console.log(star);
 }
-
-
 
 printStars(5);
