@@ -5,14 +5,14 @@ git是一個在做版本控制的程式，透過git版本控制創建一個新�
 ## 安裝git
 1. 安裝方法網站有寫：
 https://git-scm.com/
-2. 安裝完成後，查看git版本， `git  -version`，
+2. 安裝完成後，查看git版本， `git  --version`，
 3. 設定你的帳戶，連結到 Github 
 設定帳號 `git config —global user.name “<Your Name> `
 設定信箱 `git config —global user.email "<your@gmail.com>" `
 檢查使用者：`git config --list`
 ## 使用git的基礎方法
 使用 command line切換到想要加入版本控制的資料夾
-1. 初始化版本  輸入`git int`，這樣這個資料夾加上版本控制這個功能。
+1. 初始化版本  輸入`git intit`，這樣這個資料夾加上版本控制這個功能。
 2. 後續若有新增檔案到這個有加入git功能的資料夾，這些檔案在還沒新增進去git前，他的狀態是無法追蹤（會顯示untracked），因此要使用`git add `把檔案加入到版本控制功能裡，若是已經`add`過的檔案則會顯示該檔案已經staged。。
 3. 想要掌握git使用狀態可以輸入 `git status`，可以查看git控制狀況
 4. `git branch`這個指令是在master主程式以外加入一個分支來編輯code，可以避免更改到重要的程式，更改後再merge回主程式
