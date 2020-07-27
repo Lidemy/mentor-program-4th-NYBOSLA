@@ -89,7 +89,7 @@ function readBooks(id) {
   });
 }
 
-
+// delete,create,update還在思考怎麼寫
 switch (enter) {
   case 'list':
     listBooks();
