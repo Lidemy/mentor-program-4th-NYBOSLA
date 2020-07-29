@@ -37,7 +37,7 @@ p {
     margin-top: 20px;
 }
 
-.btn {
+#btn {
     border: none;
     width: 92px;
     height: 40px;
@@ -45,11 +45,25 @@ p {
     font-size: 15px;
 }
 
-h2::after {
+.active {
+    width: 20px;
     color: red;
     content: '*';
     margin-left: 10px;
 }
+
+.warn {
+    background-color: #ff9966;
+}
+
+
+/* h2::after {
+    display: none;
+    color: red;
+    content: '*';
+    margin-left: 10px;
+}
+ */
 
 input {
     width: 283px;
@@ -57,8 +71,9 @@ input {
 }
 
 .inputRadio {
-    width: 20px;
-    height: 23px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
 }
 
 
