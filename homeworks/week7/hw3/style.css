@@ -10,34 +10,45 @@ body {
 input[type=text] {
     border: none;
     width: 50%;
-    height: 10%;
     font-size: 30px;
-    border-bottom: 2px solid grey;
-    margin-bottom: 60px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
 }
 
 .item {
     border: none;
     width: 50%;
-    height: 10%;
-    font-size: 20px;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 input[type=checkbox]+p {
     display: inline;
 }
+.far{
+    font-size: 30px;
+}
 
-.far {
-    color: hotpink;
+.del {
+    color: #EE6E67;
+}
+.mark{
+    color: #c0a823;
 }
 
 .item>p {
-    font-size: 24px;
-    color: grey;
+    font-size: 30px;
+    color:#0054DE;
+    margin: 0;
 }
 
 button {
     width: 100px;
     height: 50px;
+}
+
+
+.far{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
