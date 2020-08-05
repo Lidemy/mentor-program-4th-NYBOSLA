@@ -19,6 +19,7 @@ input[type=text] {
     border: none;
     width: 50%;
     border-bottom: 1px solid grey;
+    padding: 20px;
 }
 
 input[type=checkbox]+p {

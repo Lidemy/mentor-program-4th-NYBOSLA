@@ -1,15 +1,17 @@
 
 const itemList = document.querySelector('.itemList');
 const enter = document.getElementById('enter');
-const inputContent = document.querySelector('input[enter]');
+// let inputContent = document.querySelector('input[enter]');
+const inputContent = document.getElementById('content');
+// console.log(inputContent);
 // 新增
+let num = 1;
 enter.addEventListener('click', () => {
-  const num = 1;
   const addItem = document.createElement('div');
   addItem.classList.add('item');
   addItem.setAttribute('data-value', num);
-
-
+  // console.log(num);
+  num += 1;
   itemList.appendChild(addItem);
   addItem.innerHTML = `
   <p>${inputContent.value}</p>   
@@ -22,7 +24,9 @@ enter.addEventListener('click', () => {
 document.querySelector('.itemList').addEventListener('click', (e) => {
   if (e.target.classList.contains('del') === true) {
     document.querySelector('.itemList').removeChild(e.target.closest('.item'));
-  } else {
+  }
+
+  if (e.target.classList.contains('mark') === true) {
     const style = document.querySelectorAll('.item p');
     for (let i = 0; i < style.length; i += 1) {
       console.log(style);
