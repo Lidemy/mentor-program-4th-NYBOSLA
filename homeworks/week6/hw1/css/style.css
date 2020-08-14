@@ -20,12 +20,14 @@ li {
 
 .navbar {
     margin-top: 26px;
+    margin-bottom: 26px;
 }
 
 .navbar__sitename {
     color: #489846;
-    margin-left: 20%;
-    margin-right: 40%;
+    margin-left: 10%;
+    margin-right: 30%;
+    padding: 20px;
 }
 
 .narbar__list>li>a {
@@ -34,9 +36,10 @@ li {
 
 .navbar__price {
     width: 120px;
-    height: 44px;
+    /* height: 44px; */
     background-color: #ff7286;
     border-radius: 4px;
+    /* margin-bottom: 20px; */
 }
 
 #color {
