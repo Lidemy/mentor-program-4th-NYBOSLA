@@ -1,4 +1,3 @@
-
 const itemList = document.querySelector('.itemList');
 const enter = document.getElementById('enter');
 // let inputContent = document.querySelector('input[enter]');
