@@ -26,10 +26,11 @@ document.querySelector('.itemList').addEventListener('click', (e) => {
   }
 
   if (e.target.classList.contains('mark') === true) {
-    const style = document.querySelectorAll('.item p');
-    for (let i = 0; i < style.length; i += 1) {
-      console.log(style);
-      style[i].style.background = 'yellow';
+    console.log(e.target);
+    const mark = document.querySelectorAll('p');
+
+    for (let i = 0; i < mark.length; i + 1) {
+      mark[i].classList.add('color');
     }
   }
 });

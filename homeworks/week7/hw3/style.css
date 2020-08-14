@@ -25,20 +25,22 @@ input[type=text] {
 input[type=checkbox]+p {
     display: inline;
 }
-.far{
+
+.far {
     font-size: 30px;
 }
 
 .del {
     color: #EE6E67;
 }
-.mark{
+
+.mark {
     color: #c0a823;
 }
 
 .item>p {
     font-size: 30px;
-    color:#0054DE;
+    color: #0054DE;
     margin: 0;
 }
 
@@ -47,9 +49,12 @@ button {
     height: 50px;
 }
 
-
-.far{
+.far {
     font-size: 18px;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+.color {
+    background-color: yellow;
 }
