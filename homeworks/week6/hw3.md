@@ -1,5 +1,14 @@
 ## 請找出三個課程裡面沒提到的 HTML 標籤並一一說明作用。
 
+<figure>
+圖片加上圖片解說的說明
+
+<figcaption>
+圖片解說的說明
+
+<dd> definition description
+解釋標題是什麼
+
 
 ## 請問什麼是盒模型（box modal）
 在css中，每個元素像是一個盒子，
