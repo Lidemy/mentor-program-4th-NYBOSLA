@@ -20,12 +20,14 @@ li {
 
 .navbar {
     margin-top: 26px;
+    margin-bottom: 26px;
 }
 
 .navbar__sitename {
     color: #489846;
-    margin-left: 96px;
-    margin-right: 1037px;
+    margin-left: 10%;
+    margin-right: 30%;
+    padding: 20px;
 }
 
 .narbar__list>li>a {
@@ -34,9 +36,10 @@ li {
 
 .navbar__price {
     width: 120px;
-    height: 44px;
+    /* height: 44px; */
     background-color: #ff7286;
     border-radius: 4px;
+    /* margin-bottom: 20px; */
 }
 
 #color {
@@ -161,7 +164,7 @@ p {
 
 .comment__wrap {
     float: left;
-    width: 565px;
+    width: 30%;
     position: relative;
     background-color: pink;
     margin: 20px;
@@ -179,12 +182,12 @@ p {
 .comment__item {
     position: absolute;
     border: 1px solid #c7e5ec;
-    width: 565px;
+    width: 100%;
     height: 205px;
 }
 
 .comment__content {
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 16px;
     letter-spacing: 0.14px;
     line-height: normal;
