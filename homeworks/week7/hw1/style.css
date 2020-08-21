@@ -1,0 +1,94 @@
+/* 手機 */
+
+body {
+    max-width: 100%;
+    border-top: solid 8px #fad312;
+}
+
+.container {
+    margin-top: 54px;
+    margin-left: 40px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #e74149;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.infoWrap {
+    margin-bottom: 52px;
+}
+
+.eventInfo {
+    margin-top: 20px;
+}
+
+#btn {
+    border: none;
+    width: 92px;
+    height: 40px;
+    background-color: #fad312;
+    font-size: 15px;
+}
+
+.active {
+    width: 20px;
+    color: red;
+    content: '*';
+    margin-left: 10px;
+}
+
+.warn {
+    background-color: #ff9966;
+}
+
+
+/* h2::after {
+    display: none;
+    color: red;
+    content: '*';
+    margin-left: 10px;
+}
+ */
+
+input {
+    width: 283px;
+    height: 23px;
+}
+
+.inputRadio {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+
+/* 平板 */
+
+@media screen and (min-width:768px) {
+    .container {
+        text-align: center;
+        width: 50%;
+        padding: 10%;
+        margin: auto;
+    }
+}
+
+
+/* 桌機 */
+
+@media screen and (min-width:1440px) {}
