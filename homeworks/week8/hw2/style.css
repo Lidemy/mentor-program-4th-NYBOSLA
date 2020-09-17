@@ -1,0 +1,101 @@
+body {
+    width: 100%;
+    background-image: url();
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items:center
+   
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    
+    display: inline;
+    margin-right: 50px;
+    
+}
+li:hover{
+    transform: scale(1.5);
+    transition:  1s;
+    color:red;
+    cursor: pointer;
+
+}
+
+li>a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    background-image: url(img/game.jpg);
+    /* text-align: center; */
+}
+
+.container__title {
+    color: seashell;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.content_wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: left;
+    justify-content: center;
+}
+
+.content_item {
+    width: 25%;
+    /* border: solid 1px green; */
+    margin: 20px;
+}
+.content_item:hover{
+    transform: scale(1.5);
+    transition:  1s;
+    
+
+}
+
+.content_info {
+    display: flex;
+    background-color: #4F351D;
+}
+
+img {
+    width: 100%;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.accountname {
+    font-size: 20px;
+}
+
+.info_item {
+    padding: 5px;
+    /* border: 1px solid red;
+     */
+    color: seashell;
+}
+.stream-empty{
+    width: 25%;
+    /* border: solid 1px green; */
+    margin: 20px;
+}
