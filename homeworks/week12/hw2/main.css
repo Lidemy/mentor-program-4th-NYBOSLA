@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-items: start;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 8px;
+    border: 1px solid grey;
+}
+
+section {
+    display: flex;
+}
+
+.item {
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.btn {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.border {
+    display: inline;
+    color: grey;
+    padding: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+    z-index: -1;
+}
+
+.undo {
+    font-size: 24px;
+    ;
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
