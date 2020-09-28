@@ -1,3 +1,4 @@
+/* eslint-disable */
 let num = 1;
 let todoCount = 0;
 let incompleteTodoCount = 0;
@@ -18,10 +19,7 @@ document.querySelector('.form').addEventListener('submit', (e) => {
     div.setAttribute('data-value', num);
     // console.log(num)
     div.innerHTML = `
-        <input class="checkbox" name="checkbox" type="checkbox">
-        <div class="border">
-        ${escapeHtml(content)}</div>
-        <button class="delete pure-button">刪除</button>`;
+        <input class="checkbox" name="checkbox" type="checkbox"><div class="border">${escapeHtml(content)}</div><button class="delete pure-button">刪除</button>`;
     document.getElementById('content').appendChild(div);
     todoCount++;
     incompleteTodoCount++;
@@ -164,7 +162,7 @@ document.querySelector('.selector').addEventListener('click', (e) => {
     const inputLen = input.length;
     console.log(inputLen);
     for (i = 0; i < inputLen; i++) {
-      console.log(input[i]);
+      // console.log(input[i]);
       if (input[i].classList.contains('checked')) {
         input[i].parentNode.classList.add('hide');
       } else {
@@ -178,7 +176,7 @@ document.querySelector('.selector').addEventListener('click', (e) => {
     const inputLen = input.length;
     console.log(inputLen);
     for (i = 0; i < inputLen; i++) {
-      console.log(input[i]);
+      // console.log(input[i]);
       if (input[i].classList.contains('checked')) {
         input[i].parentNode.classList.remove('hide');
       } else {
@@ -189,12 +187,77 @@ document.querySelector('.selector').addEventListener('click', (e) => {
 });
 
 
-// 儲存按鈕
-const todo = [];
-
-
 document.querySelector('.btn_save').addEventListener('click', () => {
-  const todos = document.getElementById('content');
-  console.log(todos);
-  // getAttribute('data-filter')
+  // 儲存按鈕
+  const todo = [];
+
+  // 點擊出現
+  //   const todos = document.getElementById('content');
+  // console.log(todos)
+
+
+  // for(let a =0 ; a<todos.length ;a++){
+  //   // console.log(todos[a]);
+  //   // let el = todos[a];
+  //   // console.log(el)
+
+  //   // const id= el.getAttribute('data-value')
+  //   // console.log(id)
+  //   // const record_content =document.querySelectorAll('.border')
+  //   // console.log(record_content)
+
+
+  // }
+
+
+  // console.log(todos.getAttribute('data-value'))
+  const todos = document.querySelectorAll('.content');
+  Array.prototype.forEach.call(todos, (el, i) => {
+    // console.log(el);
+    const id = el.getAttribute('data-value');
+    // console.log(id);
+
+    const text = document.querySelectorAll('div.border');
+    // console.log(text[i].textContent);
+
+    // 有沒有checked
+    const checked = document.querySelectorAll('input[name=checkbox]');
+    // console.log(checked[i])
+    const allchecked = checked[i];
+
+
+    const checkboxValue = allchecked.classList;
+    // console.log()
+
+    // let ok =checkbox_value.classList.contains('ckecked');
+    // console.log(checkbox_value[1])
+    let answer = true;
+    if (checkboxValue[1] === 'checked') {
+      answer = true;
+      // console.log('true')
+    } else {
+      answer = false;
+      // console.log('false')
+    }
+    // if(.classList.match=('checked')){
+    //   console.log('ook')
+    // }
+
+    // let checked = document.querySelectorAll('input[name=checkbox]')[i];
+    //
+
+    // console.log(checked.classList.contains('checked'))
+
+
+    todo.push({
+      id,
+      content: text[i].textContent,
+      isDone: answer,
+    });
+
+    console.log(todo);
+    // 變成json
+    console.log(JSON.stringify(todo));
+    // 把他上傳到資料庫
+  });
 });
