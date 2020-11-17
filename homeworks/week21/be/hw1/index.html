@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            padding: 20px;
+        }
+        .container{
+            width: 100%;
+            
+        }
+        input{
+            width: 80%;
+            padding: 10px;
+
+            
+        }
+        .item{
+            
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .btn{
+            border: 1px solid black;
+            width: 100px;
+            padding: 10px;
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            
+            padding: 20px;
+        }
+        .done-btn{
+            border: 1px solid black;
+            
+        }
+        .add-btn{
+            width: 15%;
+        }
+        li{
+            display: block;
+            text-decoration: none;
+        }
+        .btn-outline-success{
+            background-color: green;
+            color: seashell;
+            
+        }
+        .btn-outline-delete{
+            border: 1px solid red;
+            background-color: red;
+            color: seashell;
+        }
+        .btn-outline-add{
+            border: 1px solid blue;
+            background-color: blue;
+            color: seashell;
+        }
+        .undone-btn{
+            border: 1px solid grey;
+            background-color: grey;
+            color: seashell;
+        }
+        
+
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Todo List</h1>
+        <div class="item">
+            <input class="input-todo" placeholder="請輸入 Todo List" type="text"><button class="add-btn btn btn-outline-add">新增</button>
+        </div>
+        
+        <div class="item todos">
+            
+            <!-- <ul class="content"><div class="show">顯示輸入內容</div>
+            <div class="wrap-btn">
+                <button class="mark btn">未完成</button><button class="delete btn">刪除</button></div>
+            </ul> -->
+                
+           
+        
+        </div>
+       
+       
+        
+    </div>
+    <script>
+        $('.add-btn').click(()=>{
+            const content = $('.input-todo').val()
+            // alert(content)
+            $('.input-todo').val('')
+            $('.todos').append(`
+            <ul class=" content todo">
+                <li class="show ">${content}</li>
+            <div class="wrap-btn">
+                <button class="done-btn btn btn-outline-success">已完成</button><button class="delete-btn btn btn-outline-delete">刪除</button></div>
+            </ul>
+            
+        `)
+            if(!content) return
+            
+        })
+        // 事件代理
+        // 刪除
+        $('.todos').on('click','.delete-btn',e=>{
+            console.log(e.target)
+            // console.log('click')
+            $(e.target).parents('.todo').remove()
+        })
+        // 未完成
+        $('.todos').on('click','.done-btn',e=>{
+            // console.log(e.target)
+            // console.log('click')
+            $(e.target).text('未完成').removeClass('done-btn btn-outline-success').addClass('undone-btn')
+        })
+        //已完成
+        $('.todos').on('click','.undone-btn',e=>{
+            // console.log(e.target)
+            // console.log('click')
+            $(e.target).text('已完成').removeClass('btn undone-btn').addClass('btn done-btn btn-outline-success')
+        })
+    </script>
+    
+</body>
+</html>
